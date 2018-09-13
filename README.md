@@ -19,3 +19,4 @@ name, city, state, and phone number
 
 #Files
 people_default.csv - staging file with the default values to be imported into the database
+requirements.txt - Pip requirement file for Flask
