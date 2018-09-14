@@ -1,5 +1,5 @@
 #app/__init__.py
-import os
+import os, csv
 from flask import Flask, request, flash, url_for, redirect, render_template, make_response
 from flask_sqlalchemy import SQLAlchemy
 
@@ -50,3 +50,11 @@ def index():
 @app.route('/show_people', methods = ['GET'])
 def show_people():
     return render_template('show_people.html', people = People.query.all())
+
+#Attempt at export
+#@app.server.route('/show_people')
+#def download_csv():
+#    return send_file('output/downloadFile.csv',
+#                    mimetype='text/csv',
+#                     attachment_filename='downloadFile.csv',
+#                     as_attachment=True)
