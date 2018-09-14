@@ -17,11 +17,11 @@ name, city, state, and phone number
 - Create export tab for generating a CSV from the database
 
 ### Files
-people_default.csv - Staging file with the default values to be imported into the database
-requirements.txt - Pip requirement file for Flask
-people.py - Main source file with all the base code
-base.html - Base template that will be applied to all other templates. Includes styling
-index.html - Main page the contains the HTML with the form to input people into the database
+people_default.csv - Staging file with the default values to be imported into the database  
+requirements.txt - Pip requirement file for Flask  
+people.py - Main source file with all the base code  
+base.html - Base template that will be applied to all other templates. Includes styling  
+index.html - Main page the contains the HTML with the form to input people into the database  
 show_people.html - Page that lists all of the names from the database
 
 ### Databases
