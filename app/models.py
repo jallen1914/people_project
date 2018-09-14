@@ -1,5 +1,6 @@
-'''
- from app import db
+# app/models.py
+
+from app import db
 
  #Models and DB Structure
  class People(db.Model):
@@ -11,4 +12,3 @@
 
      def __repr__(self):
          return f"People('{self.name}','{self.phone}','{self.city}','{self.state}')"
-'''
