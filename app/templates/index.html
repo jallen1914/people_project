@@ -3,14 +3,36 @@
 {% extends "base.html" %}
 {% block title %}Home{% endblock %}
 {% block body %}
-<div class="jumbotron">
+<div style="background-color:lightblue" class="jumbotron">
   <form method="POST" action="/">
+    <div align="center"class="row">
+      Name:</br>
       <input type="text" name="name">
+    </div></br>
+    <div align="center" class="row">
+      Number:</br>
       <input type="text" name="phone">
+    </div></br>
+    <div align="center" class="row">
+      City:</br>
       <input type="text" name="city">
+    </div></br>
+    <div align="center" class="row">
+      State:</br>
       <input type="text" name="state">
-      <input type="submit" value="Add">
+    </div></br>
+    <div align="center" class="row">
+      <input type="submit" value="Add" name="submit"></br></br>
+      <b> Enter your name, phone number, city, and state to add to the database </b>
+    </div>
   </form>
-  <!--<h1>Future home of the people app - Coming Soon</h1>-->
+</div>
+<div style="background-color:orange" class="jumbotron">
+  <form method="POST" action="/">
+    <div align="center" class="row">
+      <input type="submit" value="Get Names" name="get_names"></br></br>
+      <b> Get a list of all the names in the database! </b>
+    </div>
+  </form>
 </div>
 {% endblock %}
