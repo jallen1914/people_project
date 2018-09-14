@@ -51,7 +51,7 @@ def index():
 def show_people():
     return render_template('show_people.html', people = People.query.all())
 
-#Attempt at export
+#Attempt at export 
 #@app.server.route('/show_people')
 #def download_csv():
 #    return send_file('output/downloadFile.csv',
