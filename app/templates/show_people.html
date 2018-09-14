@@ -6,21 +6,24 @@
          {{ message }}
       {%- endfor %}
 
-      <h3>Students (<a href = "{{ url_for('index') }}">Add People
-         </a>)</h3>
+      <center><h3>(<a href = "{{ url_for('index') }}">Add People
+      </a>)</h3></center>
 
-      <table>
+      </br>
+      </br>
+
+      <table align="center">
          <thead>
             <tr>
                <th>Name</th>
                <th>Phone</th>
-               <th>City </th>
+               <th>City</th>
                <th>State</th>
             </tr>
          </thead>
 
          <tbody>
-            {% for people in People %}
+            {% for people in people %}
                <tr>
                   <td>{{ people.name }}</td>
                   <td>{{ people.phone }}</td>

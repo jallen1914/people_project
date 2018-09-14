@@ -3,27 +3,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  <style>
+  table, th, td {
+      border: 1px solid black;
+      padding: 1px;
+  }
+  table {
+      border-spacing: 1px;
+  }
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% block title %}{% endblock %}</title>
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  </style>
   </head>
   <body>
-    <!--<div class="container">
-      <div class="header clearfix">
-        <nav>
-          <ul class="nav nav-pills pull-right">
-            <li role="presentation"><a href="/">Home</a></li>
-          </ul>
-        </nav>
-      </div>
-
-      <footer class="footer">
-        <p><center>Enter your name, phone number, city and state above.</center></p>
-      </footer>
-    </div> -->
     {% block body %}
     {% endblock %}
   </body>

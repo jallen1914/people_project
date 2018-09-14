@@ -1,6 +1,6 @@
 #app/__init__.py
 import os
-from flask import Flask, request, flash, url_for, redirect, render_template
+from flask import Flask, request, flash, url_for, redirect, render_template, make_response
 from flask_sqlalchemy import SQLAlchemy
 
 #Find relative path to the DB
@@ -15,6 +15,7 @@ app.config['SECRET_KEY'] = "random string"
 #Initializing DB
 db = SQLAlchemy(app)
 
+#Creating BD Model for People
 class People(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(50), nullable=False)
@@ -28,7 +29,7 @@ class People(db.Model):
         self.city = city
         self.state = state
 
-#Main Page
+#Views/Pages
 @app.route('/', methods=["GET", "POST"])
 def index():
     if request.method == 'POST':
