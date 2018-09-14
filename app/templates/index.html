@@ -26,13 +26,18 @@
       <b> Enter your name, phone number, city, and state to add to the database </b>
     </div>
   </form>
-</div>
+<!-- </div>
 <div style="background-color:orange" class="jumbotron">
   <form method="POST" action="/">
     <div align="center" class="row">
       <input type="submit" value="Get Names" name="get_names"></br></br>
       <b> Get a list of all the names in the database! </b>
     </div>
-  </form>
-</div>
+  </form> -->
+</div></br></br>
+<div align="center">
+  <h4>People</h4>
+  {% for p in people %}
+    <p>{{people.name}}</p>
+  {% endfor %}
 {% endblock %}
