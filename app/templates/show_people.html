@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}People Listing{% endblock %}
+{% block body %}
+      <hr/>
+      {%- for message in get_flashed_messages() %}
+         {{ message }}
+      {%- endfor %}
+
+      <h3>Students (<a href = "{{ url_for('index') }}">Add People
+         </a>)</h3>
+
+      <table>
+         <thead>
+            <tr>
+               <th>Name</th>
+               <th>Phone</th>
+               <th>City </th>
+               <th>State</th>
+            </tr>
+         </thead>
+
+         <tbody>
+            {% for people in People %}
+               <tr>
+                  <td>{{ people.name }}</td>
+                  <td>{{ people.phone }}</td>
+                  <td>{{ people.city }}</td>
+                  <td>{{ people.state }}</td>
+               </tr>
+            {% endfor %}
+         </tbody>
+      </table>
+{% endblock %}

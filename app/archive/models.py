@@ -1,6 +1,6 @@
 # app/models.py
 
-from app import db
+#from app import db
 
  #Models and DB Structure
  class People(db.Model):
